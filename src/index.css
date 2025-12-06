@@ -1,0 +1,244 @@
+/*
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 265 89% 78%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 265 89% 78%;
+    
+    --radius: 0.75rem;
+
+   
+    --todo-low: 142 76% 50%;
+    --todo-medium: 47 100% 68%;
+    --todo-high: 0 84% 60%;
+    --todo-completed: 240 3.8% 46.1%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 265 89% 78%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 265 89% 78%;
+
+   
+    --todo-low: 142 76% 50%;
+    --todo-medium: 47 100% 68%;
+    --todo-high: 0 84% 60%;
+    --todo-completed: 240 5% 64.9%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "ss01", "ss02";
+  }
+
+  .glass-card {
+    @apply backdrop-blur-sm bg-white/50 dark:bg-black/50 border border-white/20 dark:border-white/10;
+  }
+}
+
+@layer components {
+  .todo-container {
+    @apply max-w-5xl mx-auto px-4 py-8;
+  }
+
+  .todo-header {
+    @apply flex items-center justify-between mb-8;
+  }
+
+  .todo-section {
+    @apply space-y-6;
+  }
+
+  .todo-card {
+    @apply glass-card rounded-lg p-4 transition-all duration-200;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 265 89% 78%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 265 89% 78%;
+    
+    --radius: 0.75rem;
+
+    /* Todo priority colors */
+    --todo-low: 142 76% 50%;
+    --todo-medium: 47 100% 68%;
+    --todo-high: 0 84% 60%;
+    --todo-completed: 240 3.8% 46.1%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 265 89% 78%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 265 89% 78%;
+
+    /* Todo priority colors */
+    --todo-low: 142 76% 50%;
+    --todo-medium: 47 100% 68%;
+    --todo-high: 0 84% 60%;
+    --todo-completed: 240 5% 64.9%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "ss01", "ss02";
+  }
+
+  .glass-card {
+    @apply backdrop-blur-sm bg-white/50 dark:bg-black/50 border border-white/20 dark:border-white/10;
+  }
+}
+
+@layer components {
+  .todo-container {
+    @apply max-w-5xl mx-auto px-4 py-8;
+  }
+
+  .todo-header {
+    @apply flex items-center justify-between mb-8 p-6 glass-card;
+  }
+
+  .todo-section {
+    @apply space-y-6;
+  }
+
+  .todo-card {
+    @apply glass-card rounded-lg p-4 transition-all duration-200 border border-border/40;
+  }
+
+  .glass-card {
+    @apply backdrop-blur-sm bg-white/50 dark:bg-black/50 border border-border/40 dark:border-white/10 rounded-lg;
+  }
+
+  /* Ensure buttons have consistent alignment */
+  button svg + span,
+  button span + svg {
+    @apply ml-2;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
